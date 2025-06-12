@@ -39,6 +39,18 @@ subject_marks = {
 }
 print(int(subject_marks["maths"][1]))
 
+#question 7
+
+dict_person = {
+    "name" : "siddharth",
+    "details" : {
+        "age" : 23,
+        "city" : "bangalore",
+        "mail" : "sidd@gmail.com" }
+}
+
+print(dict_person["details"])
+
 #question 8
 billing_history = {
     "customer1" : [100, 200, 300],
