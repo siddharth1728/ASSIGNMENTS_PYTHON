@@ -52,11 +52,12 @@ dict_person = {
 print(dict_person["details"])
 
 #question 8
-billing_history = {
-    "customer1" : [100, 200, 300],
-    "customer2" : [150, 250, 350]
-}
-print(billing_history["customer1"])
+billing_history = [
+    {"amount": 100, "status": "Paid"},
+    {"amount": 150, "status": "Pending"},
+]
+
+print(billing_history[1]["status"])
 
 #question 9
 billing_dict =(
