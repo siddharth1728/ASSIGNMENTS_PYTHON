@@ -1,6 +1,9 @@
 # #question1
 
-
+def greet_user(name):
+    return f"Hello, {name}!"
+a = greet_user("John")
+print(a)
 
 
 
