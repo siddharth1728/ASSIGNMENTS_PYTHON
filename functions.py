@@ -52,3 +52,8 @@ def format_user_info(name,age):
 
 a = format_user_info("Alice", 30)
 print(a)   
+
+#question 6
+
+#  
+    
