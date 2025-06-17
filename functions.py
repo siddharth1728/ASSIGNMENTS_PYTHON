@@ -50,7 +50,7 @@ def format_user_info(name,age):
 a = format_user_info("Alice", 30)
 print(a)   
 
-question 6
+# question 6
 
 def uppercase_if_string(value):
     if  isinstance(value, str):
@@ -61,7 +61,7 @@ def uppercase_if_string(value):
 a = uppercase_if_string("shddciusd")
 print(a)
 
-question 7
+# question 7
 def safe_divide(num,den):
     result = num/den
     if den != 0:
