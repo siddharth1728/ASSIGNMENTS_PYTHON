@@ -50,18 +50,18 @@ def format_user_info(name,age):
 a = format_user_info("Alice", 30)
 print(a)   
 
-#question 6
+question 6
 
 def uppercase_if_string(value):
-    if value == "string":
+    if  isinstance(value, str):
         return value.upper()
     else :
         return "invalid input"
     
-a = uppercase_if_string("string")
+a = uppercase_if_string("shddciusd")
 print(a)
 
-#question 7
+question 7
 def safe_divide(num,den):
     result = num/den
     if den != 0:
@@ -74,14 +74,14 @@ print(float(a))
 
 #question 8
 
-# def check_login():
-#     username = input("Enter username: ")
-#     password = input("Enter password: ")
-#     if username == "admin" and password == "2468":
-#         return "Login successful"
-#     else:
-#         return "Login failed"
-# a = check_login()
+def check_login():
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+    if username == "admin" and password == "2468":
+        return "Login successful"
+    else:
+        return "Login failed"
+a = check_login()
 print(a)
 
 #question 9
