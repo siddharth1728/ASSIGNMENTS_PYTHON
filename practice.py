@@ -94,6 +94,63 @@
 # print(phone_number_of_person)
 
 # string
-word = "beautiful"
-print(word[0])  # b# can access only through square brackets
-print(word[8])  # e
+# word = "beautiful"
+# print(word[0])  # b# can access only through square brackets
+# print(word[8])  # accesing elements with positive index
+# print(word[-1])  # l # accessing elements with negative index  
+
+# SLICING
+# word = "beautiful"
+# print(word[:5:]) 
+
+# start = 0
+# stop = 8
+# print(word[start:stop:])
+
+# print(word[0:10]) # stop index fix with last index
+
+# check string content
+
+# text = "heLlo$123"
+
+# text = text.upper() #HELLO$123
+
+# print(text.isalnum()) 
+
+# print(text.isdigit())
+
+# print(text.isupper())
+
+# print(text.islower())
+
+# print(text.isspace())
+
+#string formatting
+# name = "John"
+# amount = 5000
+# sentence = f"Dear {name}, your invoice of RS.{amount} is pending"
+# print(sentence)
+
+#Dear "john", how are you?
+# name = "Dear 'john', how are you?"
+# print(name)
+
+
+#using f-strings(python 3.6+)
+
+# name = "John"
+# amount = 5000
+
+# sentence = "Dear {}, your invoice is of Rs.{} pending".format(name,amount)
+
+
+# sentence = "Dear {1}, your invoice is of Rs.{0} pending".format(name,amount)
+
+# print(sentence)
+
+name = "John"
+amount = 5000
+
+# sentence = "Dear {}, your invoice is of Rs.{3} pending".format(name,amount)
+
+sentence = "Dear {}, your invoice is of Rs.{3} pending".format(name="charlie",amount=2000)
