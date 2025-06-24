@@ -135,17 +135,30 @@ truck.honk()
 
 class Teacher:
     def __init__(self, Name, subject):
-        self.Teacher = Teacher
-        self.Student = Student
+        self.Name = Name
+        self.subject = subject
 
-    
+    def name(self):
+        print(f"{self.Name} is teaching {self.subject}")
 
-    
+teacher = Teacher('Kamlesh', 'Chemistry')
 
+teacher.name()
 
+class Student:
+    def __init__(self, Name, subject):
+        self.Name = Name
+        self.subject = subject
 
+    def name_stu(self):
+        print(f"{self.Name} is listening to {self.subject} class")
 
+teacher = Student('Akshar', 'Chemistry')
 
+teacher.name_stu()
 
+class Classroom:
+    def __init__(self, classroom_no, exam):
+        self.classroom_no = classroom_no
+        self.exam = exam
 
-    
