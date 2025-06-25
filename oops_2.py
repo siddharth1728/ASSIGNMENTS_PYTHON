@@ -77,3 +77,27 @@ classroom = Classroom('420')
 light = Light()
 light.classroom.turning_on()
 light.classroom.turning_off()
+
+
+
+class Laptop:
+
+    def __init__(self, brand):
+        self.brand = brand
+
+    def check_charge(self):
+        print(f"your laptop's charging is {self.brand}")
+
+class Battery:
+
+    def __init__(self, charge):
+        self.charge = charge
+    
+    def check_charge(self):
+        print(f"your laptop's charging is {self.charge}")
+
+laptop = Laptop("LENOVO")
+battery = Battery()
+battery.laptop.check_charge()
+    
+
