@@ -162,4 +162,11 @@ class Classroom:
         self.classroom_no = classroom_no
         self.exam = exam
 
-# uguhdredh
+    def students_exam(self):
+        print(f"{self.classroom_no} is writing  {self.exam} mock test")
+
+classroom = Classroom(401,'jee')
+
+classroom.students_exam()
+
+
