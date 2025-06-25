@@ -170,3 +170,65 @@ classroom = Classroom(401,'jee')
 classroom.students_exam()
 
 
+# question 4
+
+class Product:
+    def __init__(self,Brand, model, color ):
+        self.brand = Brand
+        self.model = model
+        self.color = color
+
+    def Mobile(self):
+        print(f"{self.brand}_{self.model}_{self.color} is available ")
+
+    def price(self):
+        print(f"{self.brand} is 1_400_00")
+
+mobile = Product('Iphone', '16promax', 'black')
+
+mobile.Mobile()
+mobile.price()
+
+
+class Cart:
+    def __init__(self,Brand, model, color ):
+        self.brand = Brand
+        self.model = model
+        self.color = color
+
+    def cart(self):
+        print(f"{self.brand}_{self.model}_{self.color} is added in cart")
+
+    def payment(self):
+        print(f"select payment for ...{self.brand} ")
+
+cart_ = Cart('Iphone', '16promax', 'black')
+
+cart_.cart()
+cart_.payment()
+
+class User:
+    def __init__(self,name,product, address, payment ):
+        self.name = name
+        self.product = product
+        self.address = address
+        self.payment = payment
+    def payment_mode(self):
+        print(f"select payment option for your product {self.product}: Google pay, phonepay, card")
+
+    def payment_status(self):
+        print(f"your paymnet is succesful for ....{self.product}")
+
+user = User('Siddharth','Iphone', 'MIGH-Colony', 'Google Pay')
+
+user.payment_mode()
+user.payment_status()
+
+print("-----------------Thankyou Visit Again---------------")
+
+
+
+
+
+
+
