@@ -4,6 +4,7 @@ class User:
     def __init__(self, name, money):
         self.name = name
         self.money = money
+        self.cart = None
 
     def add_to_cart(self):
         pass
@@ -11,10 +12,6 @@ class User:
     def remove_from_cart(self):
         pass
 
-user = User("John", 2000)
-user.money = -15000
-user2 = User("Alex", 2)
-print(f"{user2.name} had {user2.money}")
 
 class Product: # this is not the object this is the plan for the object
 
@@ -26,4 +23,8 @@ class Cart:
     def __init__(self):
         self.products = []
 
- 
+user = User("John", 2000)
+cart = Cart()
+user.cart = cart
+user.cart.products.append("Vim")
+print(user.cart.products)
