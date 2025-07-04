@@ -1,30 +1,33 @@
-# OOPS
-
-class User:
-    def __init__(self, name, money):
-        self.name = name
-        self.money = money
-        self.cart = None
-
-    def add_to_cart(self):
-        pass
-
-    def remove_from_cart(self):
-        pass
 
 
-class Product: # this is not the object this is the plan for the object
+class AC: #class decleration is done
+    def __init__(self,brand, color, ):
+        self.brand = brand
+        self.color = color
 
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
 
-class Cart:
-    def __init__(self):
-        self.products = []
+    def turn_on(self):
+        print("turning on ac")
 
-user = User("John", 2000)
-cart = Cart()
-user.cart = cart
-user.cart.products.append("Vim")
-print(user.cart.products)
+    def turn_off(self):
+        print("turning off acc")
+
+# print(type(AC))
+
+ac = AC('samsung', 'white')
+
+ac2 = AC("HAIER", "white")
+ac2.brand()
+# AC.color = "blue"
+# # ac2 = AC()
+# print(type(ac))
+
+# print(ac.brand)
+
+# print(ac is ac2) #not pointed to same memory location hence gives false
+
+# print(ac.turn_on())
+
+# whenever we initialise we have one actual object
+# if you initialise again it has an other object which  has different memory location 
+
